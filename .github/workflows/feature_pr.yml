@@ -1,9 +1,13 @@
 name: "📦 Feature Branch PR Check"
 
 on:
+  push:
+    branches:
+      - 'feature/*'
   pull_request:
     branches:
       - dev
+      - 'feature/*'
     paths:
       - '**/*.xml'
 
